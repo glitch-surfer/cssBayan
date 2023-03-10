@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+img,
+svg {
+    max-width: 100%;
+}
+
+input:focus,
+input:active {
+    outline: none;
+}
+body {
+    background-color: rgb(245, 236, 223);
+}
+.container {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.main-title {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+.subtitle {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #c5c1c1;
+}
+.bayan-list {
+    cursor: pointer;
+}
+.bayan-list__input {
+    width: 0;
+    height: 0;
+    
+}
+.bayan-list__title {
+    cursor: pointer;
+}
+.bayan-list__img {
+    display: none;
+}
