@@ -37,7 +37,7 @@ body {
     border-bottom: 1px solid #c5c1c1;
 }
 .bayan-list {
-    cursor: pointer;
+    /* position: relative; */
 }
 .bayan-list__input {
     width: 0;
@@ -49,6 +49,12 @@ body {
 .bayan-list__img {
     display: none;
 }
-.bayan-list__input:checked + .bayan-list__img {
+.bayan-list__input:checked ~ .bayan-list__img {
     display: block;
+}
+.icon {
+    width: 1rem;
+}
+.bayan-list__input:checked ~ .icon {
+    transform: rotate(45deg);
 }
