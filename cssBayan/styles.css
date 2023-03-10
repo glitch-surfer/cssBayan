@@ -42,11 +42,13 @@ body {
 .bayan-list__input {
     width: 0;
     height: 0;
-    
 }
 .bayan-list__title {
     cursor: pointer;
 }
 .bayan-list__img {
     display: none;
+}
+.bayan-list__input:checked + .bayan-list__img {
+    display: block;
 }
