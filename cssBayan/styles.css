@@ -34,14 +34,22 @@ body {
 .subtitle {
     font-size: 0.8rem;
     margin-bottom: 1.5rem;
-    border-bottom: 1px solid #c5c1c1;
 }
 .bayan-list {
     /* position: relative; */
 }
+.bayan-list__item {
+    width: 100%;
+    border-top: 1px solid #c5c1c1;
+    padding: 0.3rem;
+    position: relative;
+}
+.bayan-list__wraper {
+    display: flex;
+    justify-content: space-between;
+}
 .bayan-list__input {
-    width: 0;
-    height: 0;
+    display: none;
 }
 .bayan-list__title {
     cursor: pointer;
@@ -53,8 +61,8 @@ body {
     display: block;
 }
 .icon {
-    width: 1rem;
+    width: 0.7rem;
 }
-.bayan-list__input:checked ~ .icon {
+.bayan-list__input:checked + .bayan-list__wraper>.icon {
     transform: rotate(45deg);
 }
