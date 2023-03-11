@@ -79,7 +79,7 @@ body {
 }
 
 .bayan__input:checked~.bayan__img {
-    width: 15rem;
+    width: auto;
     height: 15rem;
 }
 
@@ -103,7 +103,7 @@ body {
     }
 
     .bayan__input:checked~.bayan__img {
-        width: 20rem;
+        width: auto;
         height: 20rem;
     }
 }
@@ -125,7 +125,7 @@ body {
     }
 
     .bayan__input:checked~.bayan__img {
-        width: 25rem;
+        width: auto;
         height: 25rem;
     }
 
@@ -140,7 +140,7 @@ body {
     }
 
     .bayan__title:hover .bayan__img {
-        width: 25rem;
+        width: auto;
         height: 25rem;
     }
     .bayan__title:hover .bayan__wraper>.wraper__icon {
