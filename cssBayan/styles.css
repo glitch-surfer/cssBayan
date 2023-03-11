@@ -17,9 +17,11 @@ input:focus,
 input:active {
     outline: none;
 }
+
 body {
     background-color: rgb(245, 236, 223);
 }
+
 .container {
     max-width: 320px;
     width: 100%;
@@ -27,44 +29,58 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
 .main-title {
     font-size: 1.5rem;
     margin-top: 15px;
 }
+
 .subtitle {
     font-size: 0.8rem;
     margin-bottom: 1.5rem;
 }
-.bayan-list {
-    
-}
+
+/* .bayan-list {} */
+
 .bayan-list__item {
     border-top: 1px solid #c5c1c1;
     overflow: hidden;
-    
 }
+
 .bayan-list__wraper {
     display: flex;
     justify-content: space-between;
 }
+
 .bayan-list__input {
     display: none;
 }
+
 .bayan-list__title {
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
-    display: block;
     padding: 0.6rem;
 }
+
 .icon {
     width: 0.7rem;
-}
-.bayan-list__img {
-display: none;
-}
-.bayan-list__input:checked ~ .bayan-list__img {
-    display: block;
+    transition: transform 0.2s ease-in-out;
 }
 
-.bayan-list__input:checked ~ .bayan-list__wraper>.icon {
+.bayan-list__img {
+    width: 0;
+    height: 0;
+    align-self: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.bayan-list__input:checked~.bayan-list__img {
+    width: 200px;
+    height: 200px;
+    
+}
+
+.bayan-list__input:checked~.bayan-list__wraper>.icon {
     transform: rotate(45deg);
 }
