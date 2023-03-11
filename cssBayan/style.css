@@ -3,9 +3,11 @@
     padding: 0px;
     margin: 0px;
 }
+
 html {
     font-size: 14px;
 }
+
 ul {
     list-style: none;
 }
@@ -62,7 +64,8 @@ body {
     padding: 0.6rem;
     transition: color 0.2s ease-in-out;
 }
-.bayan__input:checked + .bayan__wraper>.wraper__title {
+
+.bayan__input:checked+.bayan__wraper>.wraper__title {
     color: black;
 }
 
@@ -132,9 +135,11 @@ body {
     .wraper__icon {
         visibility: hidden;
     }
+
     .bayan:hover .wraper__icon {
         visibility: visible;
     }
+
     .bayan:hover .bayan__title {
         color: black;
     }
@@ -143,6 +148,7 @@ body {
         width: auto;
         height: 25rem;
     }
+
     .bayan__title:hover .bayan__wraper>.wraper__icon {
         transform: rotate(45deg);
     }
