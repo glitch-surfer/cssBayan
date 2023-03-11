@@ -42,46 +42,45 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.bayan-list__item {
+.bayan__item {
     border-top: 1px solid #c5c1c1;
-    overflow: hidden;
 }
 
-.bayan-list__wraper {
+.wraper {
     display: flex;
     justify-content: space-between;
 }
 
-.bayan-list__input {
+.bayan__input {
     display: none;
 }
 
-.bayan-list__title {
+.bayan__title {
     display: flex;
     flex-direction: column;
     cursor: pointer;
     padding: 0.6rem;
 }
 
-.icon {
+.wraper__icon {
     width: 0.7rem;
     transition: transform 0.2s ease-in-out;
 }
 
-.bayan-list__img {
+.bayan__img {
     width: 0;
     height: 0;
     align-self: center;
     transition: all 0.2s ease-in-out;
 }
 
-.bayan-list__input:checked~.bayan-list__img {
+.bayan__input:checked~.bayan__img {
     width: 15rem;
     height: 15rem;
     
 }
 
-.bayan-list__input:checked~.bayan-list__wraper>.icon {
+.bayan__input:checked~.bayan__wraper>.wraper__icon {
     transform: rotate(45deg);
 }
 
@@ -96,11 +95,11 @@ body {
         padding-right: 3rem;
     }
 
-    .bayan-list__title {
+    .bayan__title {
         padding: 1rem;
     }
 
-    .bayan-list__input:checked~.bayan-list__img {
+    .bayan__input:checked~.bayan__img {
         width: 20rem;
         height: 20rem;
     }
@@ -117,12 +116,13 @@ body {
         padding-right: 11rem;
     }
 
-    .bayan-list__title {
+    .bayan__title {
         padding: 1.2rem;
     }
 
-    .bayan-list__input:checked~.bayan-list__img {
+    .bayan__input:checked~.bayan__img {
         width: 25rem;
         height: 25rem;
     }
+
 }
