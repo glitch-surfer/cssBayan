@@ -56,10 +56,14 @@ body {
 }
 
 .bayan__title {
+    color: rgb(198, 101, 22);
     display: flex;
     flex-direction: column;
-    cursor: pointer;
     padding: 0.6rem;
+    transition: color 0.2s ease-in-out;
+}
+.bayan__input:checked + .bayan__wraper>.wraper__title {
+    color: black;
 }
 
 .wraper__icon {
@@ -71,13 +75,12 @@ body {
     width: 0;
     height: 0;
     align-self: center;
-    transition: all 0.2s ease-in-out;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
 }
 
 .bayan__input:checked~.bayan__img {
     width: 15rem;
     height: 15rem;
-    
 }
 
 .bayan__input:checked~.bayan__wraper>.wraper__icon {
@@ -118,11 +121,30 @@ body {
 
     .bayan__title {
         padding: 1.2rem;
+        cursor: pointer;
     }
 
     .bayan__input:checked~.bayan__img {
         width: 25rem;
         height: 25rem;
+    }
+
+    .wraper__icon {
+        visibility: hidden;
+    }
+    .bayan:hover .wraper__icon {
+        visibility: visible;
+    }
+    .bayan:hover .bayan__title {
+        color: black;
+    }
+
+    .bayan__title:hover .bayan__img {
+        width: 25rem;
+        height: 25rem;
+    }
+    .bayan__title:hover .bayan__wraper>.wraper__icon {
+        transform: rotate(45deg);
     }
 
 }
