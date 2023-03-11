@@ -1,11 +1,7 @@
 * {
     box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-}
-
-html {
-    font-size: 14px;
+    padding: 0;
+    margin: 0;
 }
 
 ul {
@@ -27,7 +23,7 @@ body {
 }
 
 .container {
-    max-width: 320px;
+    max-width: 20rem;
     width: 100%;
     margin: 0 auto;
     padding-left: 1rem;
@@ -83,7 +79,7 @@ body {
 
 .bayan__input:checked~.bayan__img {
     width: auto;
-    height: 15rem;
+    height: 10rem;
 }
 
 .bayan__input:checked~.bayan__wraper>.wraper__icon {
@@ -92,11 +88,11 @@ body {
 
 @media screen and (min-width: 600px) {
     html {
-        font-size: 16px;
+        font-size: calc(1rem * 1.1);
     }
 
     .container {
-        max-width: 820px;
+        max-width: 51rem;
         padding-left: 3rem;
         padding-right: 3rem;
     }
@@ -107,29 +103,34 @@ body {
 
     .bayan__input:checked~.bayan__img {
         width: auto;
-        height: 20rem;
+        height: 15rem;
     }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1000px) {
     html {
         font-size: 1.5vw;
     }
 
     .container {
-        max-width: 1920px;
+        max-width: 120rem;
         padding-left: 11rem;
         padding-right: 11rem;
     }
 
     .bayan__title {
         padding: 1.2rem;
-        cursor: pointer;
     }
 
     .bayan__input:checked~.bayan__img {
         width: auto;
         height: 25rem;
+    }
+}
+
+@media (hover: hover) and (min-width: 1000px) {
+    .bayan__title {
+        cursor: pointer;
     }
 
     .wraper__icon {
@@ -152,5 +153,4 @@ body {
     .bayan__title:hover .bayan__wraper>.wraper__icon {
         transform: rotate(45deg);
     }
-
 }
