@@ -3,7 +3,9 @@
     padding: 0px;
     margin: 0px;
 }
-
+html {
+    font-size: 14px;
+}
 ul {
     list-style: none;
 }
@@ -32,7 +34,7 @@ body {
 
 .main-title {
     font-size: 1.5rem;
-    margin-top: 15px;
+    margin-top: 1rem;
 }
 
 .subtitle {
@@ -76,8 +78,8 @@ body {
 }
 
 .bayan-list__input:checked~.bayan-list__img {
-    width: 200px;
-    height: 200px;
+    width: 15rem;
+    height: 15rem;
     
 }
 
